@@ -1,0 +1,327 @@
+.calendar_3 {
+    bottom: 0px;
+    display: flex;
+    height: 60px;
+    left: 0px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    width: 351px;
+    align-items: center;
+    perspective-origin: 187.5px 34px;
+    transform-origin: 187.5px 34px;
+    user-select: none;
+    overflow: hidden;
+    padding: 4px 12px;
+}
+
+.calendar_4 {
+    box-sizing: border-box;
+    color: rgb(166, 166, 166);
+    cursor: default;
+    height: 60px;
+    min-height: auto;
+    min-width: auto;
+    text-align: left;
+    text-decoration: none solid rgb(166, 166, 166);
+    white-space: pre-line;
+    width: 56px;
+    column-rule-color: rgb(166, 166, 166);
+    perspective-origin: 28px 30px;
+    transform-origin: 28px 30px;
+    user-select: none;
+    caret-color: rgb(166, 166, 166);
+    border: 0px none rgb(166, 166, 166);
+    flex: 0 0 auto;
+    flex-flow: column nowrap;
+    outline: rgb(166, 166, 166) none 0px;
+    padding: 11px 0px 0px;
+}
+
+.calendar_4:after {
+    color: rgb(166, 166, 166);
+    text-align: left;
+    text-decoration: none solid rgb(166, 166, 166);
+    white-space: pre-line;
+    column-rule-color: rgb(166, 166, 166);
+    caret-color: rgb(166, 166, 166);
+    border: 0px none rgb(166, 166, 166);
+    outline: rgb(166, 166, 166) none 0px;
+} /*.calendar_4:after*/
+
+.calendar_4:before {
+    color: rgb(166, 166, 166);
+    text-align: left;
+    text-decoration: none solid rgb(166, 166, 166);
+    column-rule-color: rgb(166, 166, 166);
+    caret-color: rgb(166, 166, 166);
+    border: 0px none rgb(166, 166, 166);
+    outline: rgb(166, 166, 166) none 0px;
+}
+
+.calendar_5 {
+    box-sizing: border-box;
+    color: rgb(60, 60, 60);
+    height: 16px;
+    text-align: left;
+    text-decoration: none solid rgb(60, 60, 60);
+    width: 56px;
+    column-rule-color: rgb(60, 60, 60);
+    perspective-origin: 28px 8px;
+    transform-origin: 28px 8px;
+    caret-color: rgb(60, 60, 60);
+    border: 0px none rgb(60, 60, 60);
+    font: normal normal 600 normal 12px / normal "Segoe UI WestEuropean",
+    "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0px 0px 3.5px;
+    outline: rgb(60, 60, 60) none 0px;
+}
+
+.calendar_5:after {
+    color: rgb(60, 60, 60);
+    text-align: left;
+    text-decoration: none solid rgb(60, 60, 60);
+    column-rule-color: rgb(60, 60, 60);
+    caret-color: rgb(60, 60, 60);
+    border: 0px none rgb(60, 60, 60);
+    font: normal normal 600 normal 12px / normal "Segoe UI WestEuropean",
+    "Segoe UI", Helvetica, Arial, sans-serif;
+    outline: rgb(60, 60, 60) none 0px;
+} /*.calendar_5:after*/
+
+.calendar_5:before {
+    color: rgb(60, 60, 60);
+    text-align: left;
+    text-decoration: none solid rgb(60, 60, 60);
+    white-space: pre-line;
+    column-rule-color: rgb(60, 60, 60);
+    user-select: none;
+    caret-color: rgb(60, 60, 60);
+    border: 0px none rgb(60, 60, 60);
+    font: normal normal 600 normal 12px / normal "Segoe UI WestEuropean",
+    "Segoe UI", Helvetica, Arial, sans-serif;
+    outline: rgb(60, 60, 60) none 0px;
+}
+
+.calendar_6 {
+    box-sizing: border-box;
+    color: rgb(166, 166, 166);
+    height: 16px;
+    text-align: left;
+    text-decoration: none solid rgb(166, 166, 166);
+    white-space: pre-line;
+    width: 56px;
+    column-rule-color: rgb(166, 166, 166);
+    perspective-origin: 28px 8px;
+    transform-origin: 28px 8px;
+    user-select: none;
+    caret-color: rgb(166, 166, 166);
+    border: 0px none rgb(166, 166, 166);
+    outline: rgb(166, 166, 166) none 0px;
+    font-size: 12px;
+} /*.calendar_6*/
+
+.calendar_6:after {
+    color: rgb(166, 166, 166);
+    cursor: default;
+    text-align: left;
+    text-decoration: none solid rgb(166, 166, 166);
+    white-space: pre-line;
+    column-rule-color: rgb(166, 166, 166);
+    user-select: none;
+    caret-color: rgb(166, 166, 166);
+    border: 0px none rgb(166, 166, 166);
+    font: normal normal 400 normal 12px / normal "Segoe UI WestEuropean",
+    "Segoe UI", Helvetica, Arial, sans-serif;
+    outline: rgb(166, 166, 166) none 0px;
+} /*.calendar_6:after*/
+
+.calendar_6:before {
+    color: rgb(166, 166, 166);
+    cursor: default;
+    text-align: left;
+    text-decoration: none solid rgb(166, 166, 166);
+    white-space: pre-line;
+    column-rule-color: rgb(166, 166, 166);
+    user-select: none;
+    caret-color: rgb(166, 166, 166);
+    border: 0px none rgb(166, 166, 166);
+    outline: rgb(166, 166, 166) none 0px;
+} /*.calendar_6:before*/
+
+.calendar_7 {
+    bottom: 0px;
+    box-sizing: border-box;
+    cursor: default;
+    display: flex;
+    height: 60px;
+    left: 0px;
+    min-height: auto;
+    min-width: auto;
+    position: relative;
+    right: 0px;
+
+    top: 0px;
+    white-space: pre-line;
+    width: 3.1875px;
+    align-content: flex-start;
+    perspective-origin: 1.59375px 30px;
+    transform-origin: 1.59375px 30px;
+    user-select: none;
+    flex: 1 1 auto;
+    flex-flow: column nowrap;
+    margin: 0px 0px 0px 8px;
+    overflow: hidden;
+} /*#calendar_1*/
+
+.calendar_8 {
+    bottom: 0px;
+    box-sizing: border-box;
+    cursor: default;
+    height: 60px;
+    left: 0px;
+    min-height: 4px;
+    min-width: 4px;
+    right: 0px;
+
+    top: 0px;
+    white-space: pre-line;
+    width: 4px;
+    user-select: none;
+    background: rgb(0, 120, 215) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+    border: 1px solid rgb(0, 120, 215);
+    border-radius: 2px 0 0 2px;
+}
+
+.calendar_9 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(0, 91, 163);
+    cursor: default;
+    display: flex;
+    height: 60px;
+    left: 0px;
+    min-height: auto;
+    min-width: auto;
+    position: relative;
+    right: 0px;
+    text-decoration: none solid rgb(0, 91, 163);
+    top: 0px;
+    white-space: pre-line;
+    width: 283.813px;
+    column-rule-color: rgb(0, 91, 163);
+    user-select: none;
+    fill: rgb(0, 91, 163);
+    caret-color: rgb(0, 91, 163);
+    background: rgba(0, 120, 215, 0.24) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+    border-top: 1px solid rgb(170, 211, 243);
+    border-right: 1px solid rgb(170, 211, 243);
+    border-bottom: 1px solid rgb(170, 211, 243);
+    border-left: 1px solid rgb(0, 120, 215);
+    border-radius: 0 2px 2px 0;
+    outline: rgb(0, 91, 163) none 0px;
+    overflow: hidden;
+    padding: 8px 8px 8px 12px;
+}
+
+.calendar_9:after {
+    color: rgb(0, 91, 163);
+    cursor: default;
+    text-decoration: none solid rgb(0, 91, 163);
+    white-space: pre-line;
+    column-rule-color: rgb(0, 91, 163);
+    user-select: none;
+    fill: rgb(0, 91, 163);
+    caret-color: rgb(0, 91, 163);
+    border: 0px none rgb(0, 91, 163);
+    outline: rgb(0, 91, 163) none 0px;
+}
+
+.calendar_12 {
+    box-sizing: border-box;
+    color: rgb(0, 91, 163);
+    cursor: default;
+    height: 41px;
+    min-height: auto;
+    min-width: auto;
+    text-decoration: none solid rgb(0, 91, 163);
+    white-space: pre-line;
+    width: 261.813px;
+    column-rule-color: rgb(0, 91, 163);
+    user-select: none;
+    fill: rgb(0, 91, 163);
+    caret-color: rgb(0, 91, 163);
+    border: 0px none rgb(0, 91, 163);
+    outline: rgb(0, 91, 163) none 0px;
+}
+
+.calendar_13 {
+    box-sizing: border-box;
+    color: rgb(0, 91, 163);
+    cursor: default;
+    display: flex;
+    height: 19px;
+    text-decoration: none solid rgb(0, 91, 163);
+    white-space: pre-line;
+    width: 261.813px;
+    column-rule-color: rgb(0, 91, 163);
+    perspective-origin: 130.906px 9.5px;
+    transform-origin: 130.906px 9.5px;
+    user-select: none;
+    fill: rgb(0, 91, 163);
+    caret-color: rgb(0, 91, 163);
+    border: 0px none rgb(0, 91, 163);
+    flex: 1 1 auto;
+    margin: 0px 0px 2px;
+    outline: rgb(0, 91, 163) none 0px;
+    overflow: hidden;
+}
+
+.calendar_14 {
+    box-sizing: border-box;
+    color: rgb(0, 91, 163);
+    cursor: default;
+    height: 19px;
+    min-height: auto;
+    min-width: auto;
+    text-decoration: none solid rgb(0, 91, 163);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 147.547px;
+    column-rule-color: rgb(0, 91, 163);
+    perspective-origin: 73.7656px 9.5px;
+    transform-origin: 73.7734px 9.5px;
+    user-select: none;
+    fill: rgb(0, 91, 163);
+    caret-color: rgb(0, 91, 163);
+    border: 0px none rgb(0, 91, 163);
+    font: normal normal 600 normal 14px / normal "Segoe UI WestEuropean",
+    "Segoe UI", Helvetica, Arial, sans-serif;
+    outline: rgb(0, 91, 163) none 0px;
+    overflow: hidden;
+} /*.calendar_14*/
+
+.calendar_15 {
+    box-sizing: border-box;
+    color: rgb(0, 91, 163);
+    cursor: default;
+    display: flex;
+    height: 16px;
+    text-decoration: none solid rgb(0, 91, 163);
+    white-space: pre-line;
+    width: 261.813px;
+    column-rule-color: rgb(0, 91, 163);
+    align-items: center;
+    perspective-origin: 130.906px 8px;
+    transform-origin: 130.906px 8px;
+    user-select: none;
+    fill: rgb(0, 91, 163);
+    caret-color: rgb(0, 91, 163);
+    border: 0px none rgb(0, 91, 163);
+    font: normal normal 400 normal 13px / normal "Segoe UI WestEuropean",
+    "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0px 0px 4px;
+    outline: rgb(0, 91, 163) none 0px;
+}
