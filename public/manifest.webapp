@@ -1,8 +1,8 @@
 {
   "version": "0.2.0",
-  "name": "exapp",
-  "description": "Demonstrates how to use permissions to load remote content",
-  "subtitle":"this is subtitle",
+  "name": "Outlook",
+  "description": "Used for calendars/mails/people",
+  "subtitle":"this is official microsoft app",
   "launch_path": "/index.html",
   "icons": {
     "16": "/img/icons/icon16x16.png",
@@ -14,12 +14,7 @@
     "name": "Your name",
     "url": "http://example.com"
   },
-  "type": "privileged",
-  "permissions": {
-    "systemXHR": {
-      "description": "Required to load remote content"
-    }
-  },
+  "type": "web",
   "installs_allowed_from": [
     "*"
   ],
@@ -34,5 +29,12 @@
       }
     }
   },
+  "redirects": [
+      {
+        "from": "http://localhost:3000/",
+        "to": "/index.html"
+      }
+    ],
+    "fullscreen": "true",
   "default_locale": "en"
 }

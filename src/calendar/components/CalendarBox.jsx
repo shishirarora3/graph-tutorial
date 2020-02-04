@@ -4,8 +4,9 @@ import React from 'react';
   import {CalendarHeader} from "./CalendarHeader";
 
 
-export const CalendarBox = () =><>
-      <CalendarHeader headerText="Calendar" />
-      <Calendar/>
+export const
+    CalendarBox = (props) =><>
+      <CalendarHeader {...props}/>
+      <Calendar {...props}/>
       </>;
 

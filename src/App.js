@@ -5,13 +5,11 @@ import ErrorMessage from './ErrorMessage';
 import config from './Config';
 import { getUserDetails } from './GraphService';
 import 'bootstrap/dist/css/bootstrap.css';
-import {CalendarBox} from './calendar/CalendarBox';
+import {CalendarBox} from './calendar/components/CalendarBox';
 
-class App extends Component {
+const App = class App extends Component {
   constructor(props) {
     super(props);
-    console.log(JSON.stringify(props));
-
     this.userAgentApplication = new UserAgentApplication({
         auth: {
             clientId: config.appId,
@@ -34,14 +32,14 @@ class App extends Component {
     if (user) {
       // Enhance user object with data from Graph
       this.getUserProfile();
+    }else{
+      this.login();
     }
-
-    this.login();
-
   }
 
   render() {
     let error = null;
+    const {user} =  this.state;
     if (this.state.error) {
       error = <ErrorMessage message={this.state.error.message} debug={this.state.error.debug} />;
     }
@@ -51,8 +49,21 @@ class App extends Component {
             <Route exact path="/"
               render={(props) =>
                 <CalendarBox {...props}
-                  showError={this.setErrorMessage.bind(this)} />
+                             headerText="Calendar"
+                             user={user}
+                             showError={this.setErrorMessage.bind(this)}
+                             select="id,subject,start,end,location,body"
+                />
               } />
+            <Route exact path="/event-details/:etag"
+               render={(props, params) =>
+                   <CalendarBox {...props} params={params}
+                                headerText="Calendar Details"
+                                user={user}
+                                showError={this.setErrorMessage.bind(this)}
+                                select={false}
+                   />
+               } />
       </Router>
     );
   }
@@ -121,6 +132,7 @@ class App extends Component {
           },
           error: null
         });
+        document.head.getElementsByTagName("title")[0].text = `Calendar - ${user.displayName} - Outlook`;
       }
     }
     catch(err) {
@@ -144,6 +156,6 @@ class App extends Component {
       });
     }
   }
-}
+};
 
 export default App;

@@ -20,13 +20,16 @@ export async function getUserDetails(accessToken) {
   return user;
 }
 
-export async function getEvents(accessToken) {
-  const client = getAuthenticatedClient(accessToken);
+export async function getEvents(accessToken, select) {
+    const client = getAuthenticatedClient(accessToken);
+    if(select === false){
+        return;
+    }
+    const events = await client
+        .api('/me/events')
+        .orderby('createdDateTime DESC')
+        .select(select)
+        .get();
 
-  const events = await client
-    .api('/me/events')
-    .orderby('createdDateTime DESC')
-    .get();
-
-  return events;
+    return events;
 }

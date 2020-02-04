@@ -1,5 +1,5 @@
 import React from 'react';
-import "./CalendarListItemHeader.css";
+import "../styles/CalendarListItemHeader.css";
 
 export const CalendarListItemHeader = ({
                                          start

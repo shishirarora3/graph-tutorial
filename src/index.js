@@ -3,10 +3,25 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { applyMiddleware } from 'satcheljs';
+import { trace } from 'satcheljs-trace';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const bootstrap = () => {
+    // Optionally enable some dev tools based on a URL parameter
+    let regex = new RegExp("[\\?&]devtools=");
+    let url = window.location.href.toLowerCase();
+    if (regex.exec(url)) {
+        applyMiddleware(require('satcheljs-react-devtools').default, trace);
+    }
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+    // Render the app
+    ReactDOM.render(<App />, document.getElementById('root'));
+    // If you want your app to work offline and load faster, you can change
+    // unregister() to register() below. Note this comes with some pitfalls.
+    // Learn more about service workers: https://bit.ly/CRA-PWA
+    serviceWorker.unregister();
+};
+
+
+bootstrap();
+
