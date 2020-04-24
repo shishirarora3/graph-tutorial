@@ -10,17 +10,16 @@ import {CalendarBox} from './calendar/components/CalendarBox';
 const App = class App extends Component {
   constructor(props) {
     super(props);
-    this.userAgentApplication = new UserAgentApplication({
+    const userAgentApplication = this.userAgentApplication = new UserAgentApplication({
         auth: {
             clientId: config.appId,
+            navigateToLoginRequestUrl: false,
             redirectUri: config.redirectUri
-        },
-        cache: {
-            cacheLocation: "localStorage",
-            storeAuthStateInCookie: true
         }
     });
-
+    userAgentApplication.handleRedirectCallback((error, response) => {
+      console.log(error, response.accessToken, response);
+    });
     var user = this.userAgentApplication.getAccount();
 
     this.state = {
