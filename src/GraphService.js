@@ -17,8 +17,8 @@ export async function getUserDetails(accessToken) {
 
     console.log("getUserDetails");
   const client = getAuthenticatedClient(accessToken);
-  console.log("getUserDetails", client );
   const user = await client.api('/me').get();
+    console.log("getUserDetails: user", user );
   return user;
 }
 
