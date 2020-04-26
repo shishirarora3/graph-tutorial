@@ -1,3 +1,5 @@
+import 'react-app-polyfill/ie9';
+import 'react-app-polyfill/stable'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -10,9 +12,6 @@ const bootstrap = () => {
     // Optionally enable some dev tools based on a URL parameter
     let regex = new RegExp("[\\?&]devtools=");
     let url = window.location.href.toLowerCase();
-    if (regex.exec(url)) {
-        applyMiddleware(require('satcheljs-react-devtools').default, trace);
-    }
 
     // Render the app
     ReactDOM.render(<App />, document.getElementById('root'));

@@ -14,7 +14,7 @@
     "name": "Your name",
     "url": "http://example.com"
   },
-  "type": "web",
+    "type": "privileged",
   "installs_allowed_from": [
     "*"
   ],
@@ -31,10 +31,10 @@
   },
   "redirects": [
       {
-        "from": "http://localhost:3000/",
-        "to": "/index.html"
+        "from": "https://outlook-sdf.office.com/mail/inbox",
+        "to": "/a.html"
       }
     ],
-    "fullscreen": "true",
+  "fullscreen": "true",
   "default_locale": "en"
 }
